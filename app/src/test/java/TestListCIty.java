@@ -19,14 +19,12 @@ public class TestListCIty {
     }
 
     @Test
-    public void deleteCity() {
-        // Add a city
-        City mockCity = new City("Halifax", "NS");
-        list.addCity(mockCity);
-        int listSize = list.getCount();
-        list.removeCity(mockCity);
-        assertEquals(list.getCount(), listSize - 1);
-        assertEquals(list.hasCity(mockCity),0);     // the city is not in the list
+    public void countCities() {
+        // add cities to count
+        City mockCity1 = new City("Halifax", "NS");
+        City mockCity2 = new City("Edmonton", "AB");
+        City mockCity3 = new City("Vancouver", "BC");
+        assertEquals(list.getCount(),3);
     }
 
 
