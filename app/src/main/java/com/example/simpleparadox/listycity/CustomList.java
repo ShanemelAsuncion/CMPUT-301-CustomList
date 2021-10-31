@@ -62,6 +62,15 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
         return;
     }
+    public int hasCity(City city) {
+//        if(cities.contains(city)){
+//            return 1;
+//        }
+//        else{
+//            return 0;
+//        }
+        return -1;
+    }
 
 //    public void removeCity(City city) {
 //        cities.remove(city);
@@ -69,14 +78,7 @@ public class CustomList extends ArrayAdapter<City> {
 //    }
 //
 //
-//    public int hasCity(City city) {
-//        if(cities.contains(city)){
-//            return 1;
-//        }
-//        else{
-//            return 0;
-//        }
-//    }
+//
 //
 //
 //    public int countCities(){

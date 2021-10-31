@@ -25,12 +25,12 @@ public class TestListCIty {
         assertEquals(list.getCount(),listSize+1);
     }
 
-//    @Test
-//    public void hasCity() {
-//        City mockCity = new City("Halifax", "NS");
-//        list.addCity(mockCity);
-//        assertEquals( list.hasCity(mockCity),1);    // the city is in the list
-//    }
+    @Test
+    public void hasCityTest() {
+        City mockCity = new City("Halifax", "NS");
+        list.addCity(mockCity);
+        assertEquals( list.hasCity(mockCity),1);    // the city is in the list
+    }
 //
 //    @Test
 //    public void deleteCityTest() {
