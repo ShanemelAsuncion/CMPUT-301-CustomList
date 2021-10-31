@@ -31,17 +31,17 @@ public class TestListCIty {
         list.addCity(mockCity);
         assertEquals( list.hasCity(mockCity),1);    // the city is in the list
     }
-//
-//    @Test
-//    public void deleteCityTest() {
-//        // Add a city
-//        City mockCity = new City("Halifax", "NS");
-//        list.addCity(mockCity);
-//        int listSize = list.getCount();
-//        list.removeCity(mockCity);
-//        assertEquals(list.getCount(), listSize - 1);
-//        assertEquals(list.hasCity(mockCity),0);     // the city is not in the list
-//    }
+
+    @Test
+    public void deleteCityTest() {
+        // Add a city
+        City mockCity = new City("Halifax", "NS");
+        list.addCity(mockCity);
+        int listSize = list.getCount();
+        list.removeCity(mockCity);
+        assertEquals(list.getCount(), listSize - 1);
+        assertEquals(list.hasCity(mockCity),0);     // the city is not in the list
+    }
 //
 //    @Test
 //    public void countCitiesTest() {
