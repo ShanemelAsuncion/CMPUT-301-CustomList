@@ -25,30 +25,30 @@ public class TestListCIty {
         assertEquals(list.getCount(),listSize+1);
     }
 
-    @Test
-    public void hasCity() {
-        City mockCity = new City("Halifax", "NS");
-        list.addCity(mockCity);
-        assertEquals( list.hasCity(mockCity),1);    // the city is in the list
-    }
-
-    @Test
-    public void deleteCityTest() {
-        // Add a city
-        City mockCity = new City("Halifax", "NS");
-        list.addCity(mockCity);
-        int listSize = list.getCount();
-        list.removeCity(mockCity);
-        assertEquals(list.getCount(), listSize - 1);
-        assertEquals(list.hasCity(mockCity),0);     // the city is not in the list
-    }
-
-    @Test
-    public void countCities() {
-        // add cities to count
-        City mockCity1 = new City("Halifax", "NS");
-        City mockCity2 = new City("Edmonton", "AB");
-        City mockCity3 = new City("Vancouver", "BC");
-        assertEquals(list.getCount(),3);
-    }
+//    @Test
+//    public void hasCity() {
+//        City mockCity = new City("Halifax", "NS");
+//        list.addCity(mockCity);
+//        assertEquals( list.hasCity(mockCity),1);    // the city is in the list
+//    }
+//
+//    @Test
+//    public void deleteCityTest() {
+//        // Add a city
+//        City mockCity = new City("Halifax", "NS");
+//        list.addCity(mockCity);
+//        int listSize = list.getCount();
+//        list.removeCity(mockCity);
+//        assertEquals(list.getCount(), listSize - 1);
+//        assertEquals(list.hasCity(mockCity),0);     // the city is not in the list
+//    }
+//
+//    @Test
+//    public void countCitiesTest() {
+//        // add cities to count
+//       list.addCity(new City("Halifax", "NS"));
+//       list.addCity(new City("Edmonton","AB"));
+//       list.addCity(new City("Toronto","ON"));
+//       assertEquals(list.getCount(),3);
+//    }
 }
