@@ -18,12 +18,12 @@ public class TestListCIty {
         list = new CustomList(null, new ArrayList<City>());
     }
 
-//    @Test
-//    public void addCityTest(){
-//        int listSize = list.getCount();
-//        list.addCity(new City("Halifax","NS"));
-//        assertEquals(list.getCount(),listSize+1);
-//    }
+    @Test
+    public void addCityTest(){
+        int listSize = list.getCount();
+        list.addCity(new City("Halifax","NS"));
+        assertEquals(list.getCount(),listSize+1);
+    }
 
     @Test
     public void hasCity() {
