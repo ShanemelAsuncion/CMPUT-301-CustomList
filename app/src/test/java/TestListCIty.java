@@ -33,7 +33,7 @@ public class TestListCIty {
     }
 
     @Test
-    public void deleteCity() {
+    public void deleteCityTest() {
         // Add a city
         City mockCity = new City("Halifax", "NS");
         list.addCity(mockCity);
