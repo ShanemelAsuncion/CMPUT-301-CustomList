@@ -19,8 +19,8 @@ public class CustomList extends ArrayAdapter<City> {
     private ArrayList<City> cities;
     private Context context;
 
-    public CustomList(Context context, ArrayList<City> cities){
-        super(context,0, cities);
+    public CustomList(Context context, ArrayList<City> cities) {
+        super(context, 0, cities);
         this.cities = cities;
         this.context = context;
     }
@@ -32,8 +32,8 @@ public class CustomList extends ArrayAdapter<City> {
 //        return super.getView(position, convertView, parent);
         View view = convertView;
 
-        if(view == null){
-            view = LayoutInflater.from(context).inflate(R.layout.content, parent,false);
+        if (view == null) {
+            view = LayoutInflater.from(context).inflate(R.layout.content, parent, false);
         }
 
         City city = cities.get(position);
@@ -51,29 +51,33 @@ public class CustomList extends ArrayAdapter<City> {
 //    this function will get the size of list
 //    @return
 
-    public int getCount(){
+    public int getCount() {
         return cities.size();
     }
 
 //    this function will add a city object into the list
 //    @param city
 
-    public void addCity(City city){
+    public void addCity(City city) {
         cities.add(city);
         return;
     }
 
-    public void removeCity(City city){
-        cities.remove(city);
+    public void removeCity(City city) {
+//        cities.remove(city);
         return;
     }
 
-    public int hasCity(City city){
-        if(cities.contains(city)){
-            return 1;
-        }
-        else{
-            return 0;
-        }
+
+    public int hasCity(City city) {
+//        if(cities.contains(city)){
+//            return 1;
+//        }
+//        else{
+//            return 0;
+//        }
+//    }
+        return 2;
+
     }
 }
