@@ -58,5 +58,22 @@ public class CustomList extends ArrayAdapter<City> {
 //    this function will add a city object into the list
 //    @param city
 
-   
+    public void addCity(City city){
+        cities.add(city);
+        return;
+    }
+
+    public void removeCity(City city){
+        cities.remove(city);
+        return;
+    }
+
+    public int hasCity(City city){
+        if(cities.contains(city)){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
 }
